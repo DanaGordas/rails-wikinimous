@@ -1,0 +1,15 @@
+<h1>New article</h1>
+
+<%= form_for(@article) do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+  <%= a.label :content %>
+  <%= a.text_field :content %>
+  <%= a.submit %>
+<% end %>
+<br>
+<br>
+<br>
+<footer>
+  <%= link_to "Back to list", articles_path %>
+</footer>
