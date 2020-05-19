@@ -9,7 +9,7 @@
 10.times do
   article = Article.new(
     title: Faker::Lorem.sentence,
-    content: Faker::Lorem.paragraphs
+    content: Faker::Lorem.paragraphs.join(' ')
   )
   article.save!
 end
