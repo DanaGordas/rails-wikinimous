@@ -1,13 +1,19 @@
-<h1>Wikinimous</h1>
-<ul>
-  <% @articles.each do |article| %>
-  <li>
-      <%= link_to article.title, article_path(article)  %>
-      <br>
-      <%= article.content %>
-  </li>
-  <br>
-  <% end %>
-</ul>
+<nav class="navbar">
+  <div class="container-fluid">
+    <p><%= link_to "Wikinimous", articles_path %></p>
+    <p><%= link_to "New Article", new_article_path %></p>
+  </div>
+</nav>
 
-<p>➕ <%= link_to "New Article", new_article_path %></p>
+<div class="container">
+  <ul>
+    <% @articles.each do |article| %>
+    <li>
+        <%= link_to article.title, article_path(article)  %>
+        <br>
+        <%= article.content %>
+    </li>
+    <br>
+    <% end %>
+  </ul>
+</div>
