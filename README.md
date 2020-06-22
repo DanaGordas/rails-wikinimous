@@ -7,4 +7,4 @@ Basic Ruby on Rails app (anonymous wiki) where anyone can create a new article o
 * How to create an MVP using Ruby on Rails MVC-OOP Structure
 * How to build a **DB Schema**
 * How to create and interact with relational databases **(Sqlite3)**
-* How to use Rails **Faker** gem
+* How to use Rails **Faker** and **Simple Form** gems
